@@ -1,4 +1,4 @@
 resource "aws_s3_bucket" "mybucket1" {
-  bucket = "s3-bucketsrix0034" 
+  bucket = "s3-bucketsrix0035" 
   
 }

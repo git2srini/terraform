@@ -8,8 +8,4 @@ resource "aws_instance" "free_ec2" {
   }
 }
 
-# Manage its power state separately
-resource "aws_ec2_instance_state" "stop_instance" {
-  instance_id = "i-01c978316051df228"
-  state       = "stopped"   # can be "running" or "stopped"
-}
+

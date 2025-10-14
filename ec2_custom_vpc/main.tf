@@ -98,8 +98,8 @@ resource "local_file" "private_key" {
 
 # 8️⃣ Launch EC2 Instance
 resource "aws_instance" "web" {
-  ami                         = "ami-08c40ec9ead489470" # Amazon Linux 2 (us-east-1)
-  instance_type               = "t2.micro"
+  ami                         = "ami-052064a798f08f0d3" # Amazon Linux 2 (us-east-1)
+  instance_type               = "t3.micro"  
   subnet_id                   = aws_subnet.public_subnet.id
   vpc_security_group_ids      = [aws_security_group.web_sg.id]
   associate_public_ip_address = true
@@ -110,7 +110,7 @@ resource "aws_instance" "web" {
   }
 }
 
-# 9️⃣ Output instance info
+# 9️⃣ Output instance info "34.207.78.95"
 output "public_ip" {
   value = aws_instance.web.public_ip
 }

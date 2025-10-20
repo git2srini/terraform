@@ -1,0 +1,35 @@
+{
+    "env": {
+        "node": true,
+        "es2021": true,
+        "commonjs": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": 2,
+        "no-param-reassign": 0,
+        "import/prefer-default-export": 0,
+        "radix": 0,
+        "guard-for-in": 0,
+        "no-restricted-syntax": 0,
+        "prefer-const": 2,
+        "line-break-style": 0,
+        "no-unused-expressions": "error",
+        "no-unused-labels": "error",
+        "no-unused-vars": "error",
+        "no-var": "error",
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "no-extra-boolean-cast": 0
+    }
+}
